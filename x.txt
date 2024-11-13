@@ -1,0 +1,49 @@
+Kos-kosan
+
+indekos
+- id
+- indekos_name
+- indekos_address
+
+room
+- id
+- id_kos
+- room_number
+- price
+- furnished (boolean)
+- private_restroom (boolean)
+- air_conditioner (boolean)
+
+customer
+- id
+- nik
+- id_room
+- customer_name
+- customer_address
+- check_in
+- check_out (nullable)
+
+bank_account
+- id
+- account_number (nullable)
+- bank_name (nullable)
+- identify_name (not real name for privacy)
+
+transaction
+- id
+- id_customer
+- id_room
+- transaction_date
+- transaction_value
+
+expense_category
+- id
+- expense_name
+
+expense
+- id
+- id_category
+- id_bank_account
+- expense_date
+- expense_value
+- note
