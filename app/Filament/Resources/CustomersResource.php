@@ -19,12 +19,12 @@ class CustomersResource extends Resource
 
     protected static ?string $navigationIcon = 'fas-user-group';
 
-    protected static ?string $navigationLabel = 'Data Penghuni';
+    protected static ?string $navigationLabel = 'Penghuni';
 
     protected static ?string $modelLabel = 'Data Penghuni';
     protected static ?string $pluralModelLabel = 'Data Penghuni';
 
-    protected static ?string $navigationGroup = 'Manajemen Kos';
+    protected static ?string $navigationGroup = 'Pencatatan';
 
     protected static ?int $navigationSort = 3;
 

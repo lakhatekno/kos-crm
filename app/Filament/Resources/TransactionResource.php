@@ -17,14 +17,14 @@ class TransactionResource extends Resource
 {
     protected static ?string $model = Transaction::class;
 
-    protected static ?string $navigationIcon = 'fas-donate';
+    protected static ?string $navigationIcon = 'fas-square-plus';
 
-    protected static ?string $navigationLabel = 'Pembayaran';
+    protected static ?string $navigationLabel = 'Pemasukan';
 
     protected static ?string $modelLabel = 'Data Pembayaran';
     protected static ?string $pluralModelLabel = 'Data Pembayaran';
 
-    protected static ?string $navigationGroup = 'Keuangan';
+    protected static ?string $navigationGroup = 'Pencatatan';
 
     protected static ?int $navigationSort = 1;
 

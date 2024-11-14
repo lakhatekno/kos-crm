@@ -24,7 +24,7 @@ class ExpenseResource extends Resource
     protected static ?string $modelLabel = 'Pengeluaran';
     protected static ?string $pluralModelLabel = 'Pengeluaran';
 
-    protected static ?string $navigationGroup = 'Keuangan';
+    protected static ?string $navigationGroup = 'Pencatatan';
 
     protected static ?int $navigationSort = 2;
 

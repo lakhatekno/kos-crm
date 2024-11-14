@@ -24,9 +24,9 @@ class BankAccountResource extends Resource
     protected static ?string $modelLabel = 'Rekening';
     protected static ?string $pluralModelLabel = 'Rekening';
 
-    protected static ?string $navigationGroup = 'Keuangan';
+    protected static ?string $navigationGroup = 'Manajemen Keuangan';
 
-    protected static ?int $navigationSort = 1;
+    protected static ?int $navigationSort = 6;
 
     public static function form(Form $form): Form
     {
