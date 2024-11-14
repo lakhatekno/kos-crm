@@ -9,4 +9,14 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateCustomers extends CreateRecord
 {
     protected static string $resource = CustomersResource::class;
+
+    public function getTitle(): string
+    {
+        return 'Tambah Penghuni';
+    }
+
+    public function getBreadcrumb(): string
+    {
+        return 'Tambah Penghuni';
+    }
 }

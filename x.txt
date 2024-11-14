@@ -42,6 +42,7 @@ expense_category
 
 expense
 - id
+- id_indekos
 - id_category
 - id_bank_account
 - expense_date
