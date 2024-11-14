@@ -10,6 +10,16 @@ class EditCustomers extends EditRecord
 {
     protected static string $resource = CustomersResource::class;
 
+    public function getTitle(): string
+    {
+        return 'Ubah Detail Penghuni';
+    }
+
+    public function getBreadcrumb(): string
+    {
+        return 'Ubah Detail Penghuni';
+    }
+
     protected function getHeaderActions(): array
     {
         return [

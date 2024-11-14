@@ -10,6 +10,16 @@ class EditRooms extends EditRecord
 {
     protected static string $resource = RoomsResource::class;
 
+    public function getTitle(): string
+    {
+        return 'Ubah Detail Kamar'; // Ganti teks "List" dengan "Daftar Pembayaran"
+    }
+
+    public function getBreadcrumb(): string
+    {
+        return 'Ubah Detail Kamar'; // Ganti "List" dengan teks yang Anda inginkan
+    }
+
     protected function getHeaderActions(): array
     {
         return [

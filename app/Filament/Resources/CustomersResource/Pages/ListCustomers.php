@@ -10,6 +10,16 @@ class ListCustomers extends ListRecords
 {
     protected static string $resource = CustomersResource::class;
 
+    public function getTitle(): string
+    {
+        return 'Daftar Penghuni';
+    }
+
+    public function getBreadcrumb(): string
+    {
+        return 'Daftar Penghuni';
+    }
+
     protected function getHeaderActions(): array
     {
         return [

@@ -9,4 +9,14 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateIndekos extends CreateRecord
 {
     protected static string $resource = IndekosResource::class;
+
+    public function getTitle(): string
+    {
+        return 'Tambah Kos';
+    }
+
+    public function getBreadcrumb(): string
+    {
+        return 'Tambah Kos';
+    }
 }

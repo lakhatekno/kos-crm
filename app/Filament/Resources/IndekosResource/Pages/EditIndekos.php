@@ -10,6 +10,16 @@ class EditIndekos extends EditRecord
 {
     protected static string $resource = IndekosResource::class;
 
+    public function getTitle(): string
+    {
+        return 'Ubah Detail Kos';
+    }
+
+    public function getBreadcrumb(): string
+    {
+        return 'Ubah Detail Kos';
+    }
+
     protected function getHeaderActions(): array
     {
         return [

@@ -10,6 +10,16 @@ class ListTransactions extends ListRecords
 {
     protected static string $resource = TransactionResource::class;
 
+    public function getTitle(): string
+    {
+        return 'Daftar Pembayaran'; // Ganti teks "List" dengan "Daftar Pembayaran"
+    }
+
+    public function getBreadcrumb(): string
+    {
+        return 'Daftar Pembayaran'; // Ganti "List" dengan teks yang Anda inginkan
+    }
+
     protected function getHeaderActions(): array
     {
         return [

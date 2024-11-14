@@ -13,14 +13,16 @@ return new class extends Migration
     {
         Schema::create('expenses', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_indekos');
             $table->unsignedBigInteger('id_category');
             $table->unsignedBigInteger('id_bank_account');
             $table->date('expense_date');
             $table->integer('expense_value');
             $table->timestamps();
 
-            $table->foreign('id_category')->references('categories')->on('id')->onDelete('cascade');
-            $table->foreign('id_bank_account')->references('bank_accounts')->on('id')->onDelete('cascade');
+            $table->foreign('id_indekos')->references('id')->on('indekos')->onDelete('cascade');
+            $table->foreign('id_category')->references('id')->on('expense_categories')->onDelete('cascade');
+            $table->foreign('id_bank_account')->references('id')->on('bank_accounts')->onDelete('cascade');
         });
     }
 
