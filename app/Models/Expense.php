@@ -18,8 +18,18 @@ class Expense extends Model
         'note',
     ];
 
-    public function category(): BelongsTo
+    public function expense_category(): BelongsTo
     {
         return $this->belongsTo(ExpenseCategory::class);
+    }
+
+    public function indekos(): BelongsTo
+    {
+        return $this->belongsTo(Indekos::class);
+    }
+
+    public function bank_account(): BelongsTo
+    {
+        return $this->belongsTo(BankAccount::class);
     }
 }
